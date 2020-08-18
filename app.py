@@ -125,6 +125,8 @@ if group == 0:
             ta_form += "いた"
         elif verb[-1] == "ぐ":
             ta_form += "いだ"
+        elif verb[-1] == "す":
+            ta_form += "した"
         else:
             raise NotImplementedError
         print("past simple: " + ta_form)
@@ -146,7 +148,7 @@ if group == 0:
         print("Negative(ナイ形): " + verb[:-1] + hiragana[x][0] + "ない")
         print("Causative: " + verb[:-1] + hiragana[x][0] + "せる")
         print("Passive: " + verb[:-1] + hiragana[x][0] + "れる")
-        if verb[:-1] == "す":
+        if verb[-1] == "す":
             print("Causative passive: " + verb[:-1] + "させられる")
         else:
             print("Causative passive: " + verb[:-1] + hiragana[x][0] + "せられる" + " / " + verb[:-1] + hiragana[x][0] + "される")
