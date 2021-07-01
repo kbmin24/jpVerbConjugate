@@ -31,7 +31,7 @@ exception_godan = [
     "あせる","いる","いじる","うらぎる","える","おちいる","かえる","かぎる","かげる","きる","かじる","きしる","ぎゅうじる",
     "ける","さえぎる","しる","しげる","しめる","しゃべる","すべる","せる","ちる","ちぎる","てる","ねる","にぎる","ねじる","はいる",
     "はしる","ひねる","へる","まいる","まじる","まぜる","みなぎる","むしる","もじる","よみがえる"
-] #Looks like ichidan, but actually godan. (Perhaps, because of homophones.)
+] #Looks like ichidan, but actually godan. (Perhaps because of homophones.)
 
 def chkKana(word):
     for char in word:
